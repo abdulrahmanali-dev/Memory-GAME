@@ -4,167 +4,184 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css-files/style.css">
+    <link rel="stylesheet" href="css-files/style.css" />
     <title>Memory Game</title>
   </head>
   <body>
     <div class="container">
-
-<div class="start-button">
-  <button>Start Game</button>
-</div>
-
-
-
+      <div class="start-button">
+        <button>Start Game</button>
+      </div>
       <div class="info">
         <div class="username">Username: <span>Abdulrahmanali</span></div>
-      <div class="tries">Wrong Tries: <span>0</span></div>
+        <div class="count-down">00:00</div>
+        <div class="tries">Wrong Tries: <span>0</span></div>
+      </div>
+      <div class="memory-game-blocks">
+        <div class="game-block" data-animal="lion">
+          <div class="face front"></div>
+          <div class="face back">
+            <img
+              src="/imgs/7-lion-png-image-image-download-picture-lions.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="game-block" data-animal="lion">
+          <div class="face front"></div>
+          <div class="face back">
+            <img
+              src="/imgs/7-lion-png-image-image-download-picture-lions.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="game-block" data-animal="rabbit">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/10-rabbit-png-image.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="rabbit">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/10-rabbit-png-image.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-animal="goat">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/11-2-goat-download-png.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="goat">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/11-2-goat-download-png.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="tiger">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/2-tiger-png-image-download-tigers.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="tiger">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/2-tiger-png-image-download-tigers.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="chicken">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/3-white-chicken-png-image.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="chicken">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/3-white-chicken-png-image.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="cat">
+          <div class="face front"></div>
+          <div class="face back">
+            <img
+              src="/imgs/7-cat-png-image-download-picture-kitten.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="cat">
+          <div class="face front"></div>
+          <div class="face back">
+            <img
+              src="/imgs/7-cat-png-image-download-picture-kitten.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="game-block" data-animal="dog">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/3-dog-png-image-picture-download-dogs.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="dog">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/3-dog-png-image-picture-download-dogs.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="elephant">
+          <div class="face front"></div>
+          <div class="face back">
+            <img
+              src="/imgs/3-2-elephant-free-download-png_600x600.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="game-block" data-animal="elephant">
+          <div class="face front"></div>
+          <div class="face back">
+            <img
+              src="/imgs/3-2-elephant-free-download-png_600x600.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="eagle">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/3-flying-eagle-png-image-download (3).png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-animal="eagle">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/3-flying-eagle-png-image-download (3).png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="parrot">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/2-parrot-png-images-download.png" alt="" />
+          </div>
+        </div>
+
+        <div class="game-block" data-animal="parrot">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/2-parrot-png-images-download.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="memory-game-blocks">
-      <div class="game-block" data-animal="lion">
-        <div class="face front"></div>
-        <div class="face back">
-          <img
-            src="/imgs/7-lion-png-image-image-download-picture-lions.png"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="lion">
-        <div class="face front"></div>
-        <div class="face back">
-          <img
-            src="/imgs/7-lion-png-image-image-download-picture-lions.png"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="rabbit">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/10-rabbit-png-image.png" alt="" />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="rabbit">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/10-rabbit-png-image.png" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-animal="goat">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/11-2-goat-download-png.png" alt="" />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="goat">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/11-2-goat-download-png.png" alt="" />
-        </div>
-      </div>
-      
-      <div class="game-block" data-animal="tiger">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/2-tiger-png-image-download-tigers.png" alt="" />
-        </div>
-      </div>
-      
-      <div class="game-block" data-animal="tiger">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/2-tiger-png-image-download-tigers.png" alt="" />
-        </div>
-      </div>
-      
-      <div class="game-block" data-animal="chicken">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/3-white-chicken-png-image.png" alt="" />
-        </div>
-      </div>
-      
-      <div class="game-block" data-animal="chicken">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/3-white-chicken-png-image.png" alt="" />
-        </div>
-      </div>
-      
-      <div class="game-block" data-animal="cat">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/7-cat-png-image-download-picture-kitten.png" alt="" />
-        </div>
-      </div>
-      
-      <div class="game-block" data-animal="cat">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/7-cat-png-image-download-picture-kitten.png" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-animal="dog">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/3-dog-png-image-picture-download-dogs.png" alt="" />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="dog">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/3-dog-png-image-picture-download-dogs.png" alt="" />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="elephant">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/3-2-elephant-free-download-png_600x600.png" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-animal="elephant">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/3-2-elephant-free-download-png_600x600.png" alt="" />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="eagle">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/3-flying-eagle-png-image-download (3).png" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-animal="eagle">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/3-flying-eagle-png-image-download (3).png" alt="" />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="parrot">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/2-parrot-png-images-download.png" alt="" />
-        </div>
-      </div>
-
-      <div class="game-block" data-animal="parrot">
-        <div class="face front"></div>
-        <div class="face back">
-          <img src="/imgs/2-parrot-png-images-download.png" alt="" />
-        </div>
-      </div>
+    <!-- Start popUp -->
+    <div class="popup">
+      <div class="popup-box">
+        <h2>Game Over</h2>
+        <button class="repeat">Repeat</button>
       </div>
     </div>
-  </div>
-  <script src="main.js"></script>
+    <!-- End popUp -->
+
+    <audio id="fail" src="/audio/fail.mp3" preload="auto"></audio>
+    <audio id="success" src="/audio/success.mp3" preload="auto"></audio>
+    <script src="main.js"></script>
   </body>
 </html>
